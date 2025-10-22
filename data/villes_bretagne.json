@@ -1,0 +1,142 @@
+[
+  {
+    "nom": "Rennes",
+    "adresse_gare": "19 Place de la Gare, 35000 Rennes",
+    "lat": 48.1173,
+    "lon": -1.6778,
+    "lieux": ["Parlement de Bretagne", "Parc du Thabor", "Musée des Beaux-Arts"]
+  },
+  {
+    "nom": "Brest",
+    "adresse_gare": "Place du 19ème Régiment d'Infanterie, 29200 Brest",
+    "lat": 48.3904,
+    "lon": -4.4861,
+    "lieux": ["Océanopolis", "Musée national de la Marine", "Port du Moulin Blanc"]
+  },
+  {
+    "nom": "Quimper",
+    "adresse_gare": "1 Place Louis Armand, 29000 Quimper",
+    "lat": 47.9961,
+    "lon": -4.0963,
+    "lieux": ["Cathédrale Saint-Corentin", "Musée des Beaux-Arts", "Jardin de la Retraite"]
+  },
+  {
+    "nom": "Vannes",
+    "adresse_gare": "Place de la Gare, 56000 Vannes",
+    "lat": 47.6582,
+    "lon": -2.7608,
+    "lieux": ["Remparts de Vannes", "Aquarium de Vannes", "Port de plaisance"]
+  },
+  {
+    "nom": "Saint-Malo",
+    "adresse_gare": "1 Avenue Anita Conti, 35400 Saint-Malo",
+    "lat": 48.6493,
+    "lon": -2.0257,
+    "lieux": ["Intra-Muros", "Grand Bé et Petit Bé", "Plage du Sillon"]
+  },
+  {
+    "nom": "Lorient",
+    "adresse_gare": "1 Boulevard Louis Nail, 56100 Lorient",
+    "lat": 47.7508,
+    "lon": -3.3669,
+    "lieux": ["Cité de la Voile Éric Tabarly", "Sous-marin Flore", "Port de pêche de Keroman"]
+  },
+  {
+    "nom": "Saint-Brieuc",
+    "adresse_gare": "Place de la Gare, 22000 Saint-Brieuc",
+    "lat": 48.5142,
+    "lon": -2.7657,
+    "lieux": ["Baie de Saint-Brieuc", "Musée d’Art et d’Histoire", "Cathédrale Saint-Étienne"]
+  },
+  {
+    "nom": "Douarnenez",
+    "adresse_gare": "Ancienne gare, 29100 Douarnenez (gare fermée, correspondance via Quimper)",
+    "lat": 48.0926,
+    "lon": -4.3306,
+    "lieux": ["Port-musée", "Plage des Dames", "Île Tristan"]
+  },
+  {
+    "nom": "Concarneau",
+    "adresse_gare": "Ancienne gare, 29900 Concarneau (correspondance via Rosporden)",
+    "lat": 47.8751,
+    "lon": -3.9224,
+    "lieux": ["Ville Close", "Musée de la Pêche", "Plage des Sables Blancs"]
+  },
+  {
+    "nom": "Pontivy",
+    "adresse_gare": "Boulevard de Bretagne, 56300 Pontivy (ligne fret, non desservie voyageurs)",
+    "lat": 48.0693,
+    "lon": -2.9654,
+    "lieux": ["Château des Rohan", "Canal de Nantes à Brest", "Vieille ville médiévale"]
+  },
+  {
+    "nom": "Dinan",
+    "adresse_gare": "Place de la Gare, 22100 Dinan",
+    "lat": 48.4542,
+    "lon": -2.0457,
+    "lieux": ["Château de Dinan", "Rue du Jerzual", "Port de Dinan"]
+  },
+  {
+    "nom": "Fougères",
+    "adresse_gare": "Ancienne gare, 35300 Fougères (correspondance via Vitré)",
+    "lat": 48.3522,
+    "lon": -1.2005,
+    "lieux": ["Château de Fougères", "Jardin Public", "Beffroi de la ville"]
+  },
+  {
+    "nom": "Auray",
+    "adresse_gare": "Place Raoul Dautry, 56400 Auray",
+    "lat": 47.6681,
+    "lon": -2.9835,
+    "lieux": ["Port Saint-Goustan", "Église Saint-Gildas", "Pont de Saint-Goustan"]
+  },
+  {
+    "nom": "Carnac",
+    "adresse_gare": "Avenue de la Gare, 56340 Carnac (gare TER Carnac-Plage)",
+    "lat": 47.5841,
+    "lon": -3.0788,
+    "lieux": ["Alignements de Carnac", "Musée de Préhistoire", "Grande Plage"]
+  },
+  {
+    "nom": "Ploërmel",
+    "adresse_gare": "Ancienne gare, 56800 Ploërmel (correspondance via Redon)",
+    "lat": 47.9314,
+    "lon": -2.3965,
+    "lieux": ["Lac au Duc", "Horloge astronomique", "Chapelle Bleue"]
+  },
+  {
+    "nom": "Guingamp",
+    "adresse_gare": "Place du 19 Mars 1962, 22200 Guingamp",
+    "lat": 48.5624,
+    "lon": -3.1514,
+    "lieux": ["Basilique Notre-Dame-de-Bon-Secours", "Place du Centre", "Château de Pierre II"]
+  },
+  {
+    "nom": "Lamballe",
+    "adresse_gare": "Place du 11 Novembre, 22400 Lamballe",
+    "lat": 48.4683,
+    "lon": -2.5139,
+    "lieux": ["Haras national", "Musée Mathurin Méheut", "Vieille ville"]
+  },
+  {
+    "nom": "Roscoff",
+    "adresse_gare": "Place de la Gare, 29680 Roscoff",
+    "lat": 48.7231,
+    "lon": -3.9879,
+    "lieux": ["Jardin exotique", "Église Notre-Dame-de-Croaz-Batz", "Île de Batz"]
+  },
+  {
+    "nom": "Morlaix",
+    "adresse_gare": "Place Roland Doré, 29600 Morlaix",
+    "lat": 48.5778,
+    "lon": -3.8278,
+    "lieux": ["Viaduc de Morlaix", "Maison à Pondalez", "Port de Morlaix"]
+  },
+  {
+    "nom": "Landerneau",
+    "adresse_gare": "Place Jean Jaurès, 29800 Landerneau",
+    "lat": 48.4521,
+    "lon": -4.2531,
+    "lieux": ["Pont de Rohan", "Fondation Leclerc", "Église Saint-Houardon"]
+  }
+]
