@@ -1,10 +1,212 @@
 {
-    "bretagne": {
+  "bretagne": {
+    "tourisme_ferroviaire": {
+      "Finistère": 40,
+      "Morbihan": 30,
+      "Ille-et-Vilaine": 20,
+      "Côtes-d'Armor": 10
+    }
+  },
+  "trajets_exemples": {
+    "Rennes–Brest": {
+      "distance_km": 244,
+      "temps": "2h00",
       "tourisme_ferroviaire": {
-        "Finistère": 33,
-        "Morbihan": 31,
-        "Ille-et-Vilaine": 20,
-        "Côtes-d'Armor": 16
+        "Finistère": 50,
+        "Morbihan": 30,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Rennes–Quimper": {
+      "distance_km": 211,
+      "temps": "1h45",
+      "tourisme_ferroviaire": {
+        "Finistère": 60,
+        "Morbihan": 20,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Rennes–Lorient": {
+      "distance_km": 152,
+      "temps": "1h30",
+      "tourisme_ferroviaire": {
+        "Finistère": 40,
+        "Morbihan": 40,
+        "Ille-et-Vilaine": 10,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Rennes–Vannes": {
+      "distance_km": 111,
+      "temps": "1h00",
+      "tourisme_ferroviaire": {
+        "Finistère": 30,
+        "Morbihan": 50,
+        "Ille-et-Vilaine": 10,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Rennes–Saint-Brieuc": {
+      "distance_km": 99,
+      "temps": "1h10",
+      "tourisme_ferroviaire": {
+        "Finistère": 20,
+        "Morbihan": 10,
+        "Ille-et-Vilaine": 50,
+        "Côtes-d'Armor": 20
+      }
+    },
+    "Rennes–Lannion": {
+      "distance_km": 176,
+      "temps": "2h00",
+      "tourisme_ferroviaire": {
+        "Finistère": 40,
+        "Morbihan": 35,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Rennes–Pontivy": {
+      "distance_km": 122,
+      "temps": "1h30",
+      "tourisme_ferroviaire": {
+        "Finistère": 30,
+        "Morbihan": 45,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Rennes–Ploërmel": {
+      "distance_km": 79,
+      "temps": "1h00",
+      "tourisme_ferroviaire": {
+        "Finistère": 25,
+        "Morbihan": 50,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Brest–Quimper": {
+      "distance_km": 72,
+      "temps": "1h00",
+      "tourisme_ferroviaire": {
+        "Finistère": 70,
+        "Morbihan": 15,
+        "Ille-et-Vilaine": 10,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Brest–Lorient": {
+      "distance_km": 175,
+      "temps": "2h10",
+      "tourisme_ferroviaire": {
+        "Finistère": 50,
+        "Morbihan": 40,
+        "Ille-et-Vilaine": 5,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Brest–Vannes": {
+      "distance_km": 216,
+      "temps": "2h30",
+      "tourisme_ferroviaire": {
+        "Finistère": 45,
+        "Morbihan": 40,
+        "Ille-et-Vilaine": 10,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Brest–Saint-Brieuc": {
+      "distance_km": 138,
+      "temps": "1h45",
+      "tourisme_ferroviaire": {
+        "Finistère": 60,
+        "Morbihan": 15,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Brest–Lannion": {
+      "distance_km": 99,
+      "temps": "1h30",
+      "tourisme_ferroviaire": {
+        "Finistère": 70,
+        "Morbihan": 15,
+        "Ille-et-Vilaine": 10,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Quimper–Lorient": {
+      "distance_km": 73,
+      "temps": "1h00",
+      "tourisme_ferroviaire": {
+        "Finistère": 60,
+        "Morbihan": 30,
+        "Ille-et-Vilaine": 5,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Quimper–Vannes": {
+      "distance_km": 129,
+      "temps": "1h30",
+      "tourisme_ferroviaire": {
+        "Finistère": 55,
+        "Morbihan": 40,
+        "Ille-et-Vilaine": 5,
+        "Côtes-d'Armor": 0
+      }
+    },
+    "Quimper–Saint-Brieuc": {
+      "distance_km": 192,
+      "temps": "2h10",
+      "tourisme_ferroviaire": {
+        "Finistère": 50,
+        "Morbihan": 25,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Lorient–Vannes": {
+      "distance_km": 59,
+      "temps": "0h45",
+      "tourisme_ferroviaire": {
+        "Finistère": 40,
+        "Morbihan": 50,
+        "Ille-et-Vilaine": 5,
+        "Côtes-d'Armor": 5
+      }
+    },
+    "Lorient–Saint-Brieuc": {
+      "distance_km": 133,
+      "temps": "1h40",
+      "tourisme_ferroviaire": {
+        "Finistère": 45,
+        "Morbihan": 30,
+        "Ille-et-Vilaine": 15,
+        "Côtes-d'Armor": 10
+      }
+    },
+    "Vannes–Saint-Brieuc": {
+      "distance_km": 114,
+      "temps": "1h30",
+      "tourisme_ferroviaire": {
+        "Finistère": 25,
+        "Morbihan": 30,
+        "Ille-et-Vilaine": 30,
+        "Côtes-d'Armor": 15
+      }
+    },
+    "Vannes–Lannion": {
+      "distance_km": 168,
+      "temps": "2h00",
+      "tourisme_ferroviaire": {
+        "Finistère": 35,
+        "Morbihan": 40,
+        "Ille-et-Vilaine": 10,
+        "Côtes-d'Armor": 15
       }
     }
   }
+}
