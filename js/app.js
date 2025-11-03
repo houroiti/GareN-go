@@ -322,7 +322,9 @@ fetch("data/data_tourisme.json")
   .then(res => res.json())
   .then(data => {
     const bzh = data.bretagne;
-    new Chart(document.getElementById("tourismeChart"), {
+    const ctxTourisme = document.getElementById("tourismeChart").getContext("2d");
+
+    const tourismeChart = new Chart(ctxTourisme, {
       type: "pie",
       data: {
         labels: Object.keys(bzh.tourisme_ferroviaire),
@@ -345,69 +347,41 @@ fetch("data/data_tourisme.json")
         }
       }
     });
-  })
-  .catch(err => console.error("Erreur chargement data_tourisme.json :", err));
 
-// --- effet header ---
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('header');
-  if (window.scrollY > 50) header.classList.add('scrolled');
-  else header.classList.remove('scrolled');
-});
-
-    // Initialisation du graphique du tourisme ferroviaire (camembert)
-const ctxTourisme = document.getElementById("tourismeChart").getContext("2d");
-const tourismeChart = new Chart(ctxTourisme, {
-  type: "pie",
-  data: {
-    labels: [],
-    datasets: [{
-      data: [],
-      backgroundColor: ["#4CAF50", "#81C784", "#AED581", "#C5E1A5"]
-    }]
-  },
-  options: {
-    plugins: {
-      title: {
-        display: false 
-      },
-      legend: {
-        position: "bottom"
-      }
-    }
-  }
-});
-
-
-    // --- fonction pour mettre à jour le graphique du tourisme ---
     function updateTourismeGraph(trajetNom) {
-      // Accède aux données de tourisme pour le trajet sélectionné
-      const trajet = data.trajets_exemples[trajetNom];
-      const tourismeData = trajet.tourisme_ferroviaire;
-      titreTourisme.textContent = `Tourisme ferroviaire par département`;
+      const trajet = bzh.trajets_exemples[trajetNom];
+      const tourismeData = trajet?.tourisme_ferroviaire;
 
-
-      // Assurez-vous que les données existent
       if (tourismeData) {
         const labels = Object.keys(tourismeData);
         const values = Object.values(tourismeData);
-
-        // Mettre à jour les données du graphique
         tourismeChart.data.labels = labels;
         tourismeChart.data.datasets[0].data = values;
-        tourismeChart.update(); // Actualiser le graphique
+        tourismeChart.update();
+      } else {
+        console.error(`Aucune donnée touristique disponible pour le trajet ${trajetNom}`);
       }
     }
 
-    // --- écoute sur changement du select pour le tourisme ---
-    selectTrajetTourisme.addEventListener("change", (e) => {
-      const selectedTrajet = e.target.value;
-      if (selectedTrajet) {
-        updateTourismeGraph(selectedTrajet);
-      }
-    });
+    const selectTrajetTourisme = document.getElementById("trajet-tourisme");
+    if (selectTrajetTourisme) {
+      Object.keys(bzh.trajets_exemples).forEach(trajetNom => {
+        const option = document.createElement("option");
+        option.value = trajetNom;
+        option.textContent = trajetNom;
+        selectTrajetTourisme.appendChild(option);
+      });
 
-    // Afficher le graphique du tourisme avec le premier trajet par défaut
-    const premierTrajetTourisme = Object.keys(data.trajets_exemples)[0];
-    updateTourismeGraph(premierTrajetTourisme);
-    selectTrajetTourisme.value = premierTrajetTourisme;
+      selectTrajetTourisme.addEventListener("change", (e) => {
+        updateTourismeGraph(e.target.value);
+      });
+
+      const premierTrajetTourisme = Object.keys(bzh.trajets_exemples)[0];
+      selectTrajetTourisme.value = premierTrajetTourisme;
+      updateTourismeGraph(premierTrajetTourisme);
+    }
+  })
+  .catch(err => {
+    console.error("Erreur chargement data_tourisme.json :", err);
+    alert("Erreur de chargement des données.");
+  });
