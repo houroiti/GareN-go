@@ -470,12 +470,48 @@ body {
 #trajet.input-pill{
   min-width:260px;
   padding:10px 18px;
-  border:1.5px solid #8A9386;
   border-radius:9999px;
   background:#fff;
   outline:none;
 }
 #trajet.input-pill:focus{ box-shadow:0 0 0 3px rgba(138,147,134,.25); }
+
+#tourisme-section {
+  padding: 80px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+#tourisme-section .controls {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#tourisme-section h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+#tourisme-section .chart-item {
+  background: transparent; 
+  border: none;            
+  box-shadow: none;        
+  padding: 0;
+  height: auto;
+}
+
+#tourismeChart {
+  width: 600px !important;   
+  height: 600px !important;  
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
 
 .charts-container{
   display:grid;
