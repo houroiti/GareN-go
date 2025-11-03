@@ -141,7 +141,7 @@
     </div>
   </section>
 
-  <!-- ✅ Correction : id et fermeture -->
+  
   <section class="eco-dash" id="eco-dash">
     <h2 class="dash-title">Voyagez vert, respirez mieux</h2>
 
@@ -161,14 +161,26 @@
   </section>
 
    
-  <div class="graph-block">
-    <div class="controls">
-      <label for="trajet-tourisme">Choisissez un trajet :</label>
-      <select id="trajet-tourisme"></select>
+  <div class="graph-block" id="tourisme-section">
+    <div class="voyagez">
+      <h3>Explorez le tourisme ferroviaire</h3>
     </div>
+  
+    <div class="controls">
+      <div class="control">
+        <label for="trajet-tourisme">Choisissez un trajet</label>
+        <select id="trajet-tourisme" class="input-pill">
+          <option value="" disabled selected>— Sélectionner —</option>
+        </select>
+      </div>
+    </div>
+  
     <h3 id="titre-tourisme">Répartition du tourisme ferroviaire</h3>
-    <canvas id="tourismeChart"></canvas>
+    <div class="chart-item" style="margin: 0 auto; max-width: 500px;">
+      <canvas id="tourismeChart"></canvas>
+    </div>
   </div>
+  
   
   <footer class="site-footer">
     <div class="footer-links">
