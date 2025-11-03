@@ -340,7 +340,6 @@ fetch("data/data_tourisme.json")
           legend: { position: "bottom", labels: { font: { family: "Jost" } } },
           title: {
             display: true,
-            text: "Répartition du tourisme ferroviaire par département",
             color: "#111",
             font: { family: "Jost", size: 18, weight: 700 }
           }
